@@ -7,7 +7,7 @@
         <ng-container *ngIf="!posts">
             <span class="title" [ngStyle]="{'text-align': 'center', 'color':'red'}">Static Content (CORS Error)</span>
 
-            <div *ngFor="let item of posts" class="item">
+            <div *ngFor="let item of staticPosts" class="item">
                 <div class="left">
                     <img [src]="item.urlToImage" />
                 </div>
