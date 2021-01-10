@@ -1,0 +1,27 @@
+<div class="main">
+    <a routerLink="/first"><<<Previous Page</a>
+    <span class="title">News</span>
+
+    <div class="news">
+
+        <ng-container *ngIf="!posts">
+            <span class="title" [ngStyle]="{'text-align': 'center'}">No Articles</span>
+        </ng-container>
+
+        <ng-container *ngIf="posts">
+
+            <div *ngFor="let item of posts" class="item">
+                <div class="left">
+                    <img [src]="item.urlToImage" />
+                </div>
+                <div class="right">
+                    <span class="sub-title gray">{{item.publishedAt|date}} | {{item.source.name|titlecase}}</span>
+                    <span (click)="goToPage(item.url)" class="title">{{item.title|titlecase}}</span>
+                    <span class="sub-title">{{item.description|excerpt:90}}</span>
+
+                </div>
+            </div>
+
+        </ng-container>
+    </div>
+</div>

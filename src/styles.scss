@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+
+// font-family: 'Julius Sans One', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+.alt-title {
+  font-family: "Julius Sans One", sans-serif;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.sub-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.normal {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+.black {
+  color: #000;
+}
+.dark {
+  color: rgb(141, 140, 140);
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+.gray {
+  color: rgb(204, 204, 204);
+}
+
+.badge-good {
+  background: green;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.badge-bad {
+  background: red;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
