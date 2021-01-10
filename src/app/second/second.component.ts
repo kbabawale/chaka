@@ -49,7 +49,7 @@ export class SecondComponent implements OnInit {
 
     this.posts = await this.network.getArticles();
     this.posts = this.posts.articles ? this.posts.articles : this.staticPosts;
-    console.log(this.posts);
+
   }
 
   goToPage(page) {
