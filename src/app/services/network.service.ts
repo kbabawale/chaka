@@ -13,7 +13,7 @@ export class NetworkService {
   constructor(private http: HttpClient) { }
 
   getArticles() {
-    return this.http.get<any>('http://newsapi.org/v2/everything?domains=wsj.com&apiKey=' + this.newkey).toPromise();
+    return this.http.get<any>('https://newsapi.org/v2/everything?domains=wsj.com&apiKey=' + this.newkey).toPromise();
 
   }
 }
